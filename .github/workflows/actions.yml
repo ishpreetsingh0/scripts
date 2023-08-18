@@ -13,3 +13,7 @@ jobs:
           who-to-greet: Ishpreet Singh
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: List Files
+        run: ls -ltr

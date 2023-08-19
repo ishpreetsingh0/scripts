@@ -1,7 +1,8 @@
 ---
 name: Shell Commands
 on:
-  - push
+#  - push
+# remove # from above line to run work fow
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest

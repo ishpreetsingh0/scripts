@@ -8,5 +8,5 @@ jobs:
   run-shell-commands_every_2nd_minute:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull_request example
+      - name: Cron Job example
         run: echo " Hello World from a schedule action"

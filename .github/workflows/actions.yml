@@ -1,7 +1,7 @@
 name: Actions-Workflow
 
-on: [push]
-
+#on: [push]
+#remove # from previous line to run this workflow
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest

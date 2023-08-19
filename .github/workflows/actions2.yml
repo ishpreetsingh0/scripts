@@ -1,0 +1,11 @@
+---
+name: Corn Job
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+jobs:
+  run-shell-commands_every_2nd_minute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull_request example
+        run: echo " Hello World from a schedule action"

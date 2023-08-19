@@ -1,10 +1,10 @@
 ---
-name: Shell Commands
+name: Pull Request_Shell Commands
 on:
   pull_request:
     types: [closed, assigned, opened, reopened]
 jobs:
-  run-shell-commands:
+  run-shell-commands_on_PULL_REQUEST:
     runs-on: ubuntu-latest
     steps:
       - name: Pull_request example

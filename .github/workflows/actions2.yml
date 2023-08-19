@@ -2,8 +2,8 @@
 name: Corn Job
 on:
   schedule:
-    - cron: '*/1 * * * *'
-    - cron: '*/2 * * * *'
+    - cron: '*/5 * * * *'
+    - cron: '*/6 * * * *'
 jobs:
   run-shell-commands_every_2nd_minute:
     runs-on: ubuntu-latest

@@ -2,8 +2,19 @@ name: This is a TASK
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Kindly provide you name -'
+        default: 'Owner'
+        required: true
 
 jobs:
+
+  Hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Starting of Pipeline
+        run: echo "Hello ${{ inputs.name }}"
   Build:
     runs-on: ubuntu-latest
     steps:

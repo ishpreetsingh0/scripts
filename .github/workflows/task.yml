@@ -1,0 +1,32 @@
+name: This is a TASK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile
+        run: echo Hello, world!
+    
+  Staging:
+    name: Deploy to Staging 
+    needs: [Build]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Staging
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+            
+  Prod:
+    name: Deploy to Production 
+    needs: [Staging]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Production
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+    

@@ -16,6 +16,7 @@ jobs:
       - name: Starting of Pipeline
         run: echo "Hello ${{ inputs.name }}"
   Build:
+    needs: [Hello]
     runs-on: ubuntu-latest
     steps:
       - name: Compile
